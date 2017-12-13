@@ -36,7 +36,7 @@ More and more PCB manufacturers accept native KiCAD board files (extension .kica
 
 The Gerber export is a little bit more complicated.
 
-After opening your board in Pcbnew, make sure that your solder mask clearance and min width are set to zero. This is important because the manufacturers normally want to define the clearance themselves based on their process. Setting it to zero makes it easier for them to shrink/enlarge the pads for the solder mask. You find the dialogue under *Dimensions > Pads to Mask Clearance*:
+After opening your board in Pcbnew (//kommentar: kursiv oder marktiert, da KiCAD spezifischer Begriff), make sure that your solder mask clearance (//ebenfalls) and min width (//ebenfalls) are set to zero. This is important because the manufacturers normally want to define the clearance themselves based on their process. Setting it to zero makes it easier for them to shrink/enlarge the pads for the solder mask. You find the dialogue under *Dimensions > Pads to Mask Clearance*:
 
 ![Pads and Mask Clearance dialog](/images/docs_kicad_pads_clearance.png)
 
@@ -58,6 +58,7 @@ Select a folder where your files should be saved and press *Plot*:
 After sucessful export, press *Generate Drill Files*. Select the same output directory and make sure that *Merge PTH and NPTH holes into one file* is **not** checked. Otherwise, your manufacturer doesn't know which holes are copper plated or not.
 
 ![Gerber Export Settings](/images/docs_kicad_drill_file.png)
+(//kästchen welches nicht markiert sein soll, rot umranden)
 
 After that you should have all files necessary for the PCB production. Compress all files (gerber and drill files) to a .zip file and send them to the manufacturer.
 
